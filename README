@@ -1,0 +1,19 @@
+Clent-Server File Service - Sharepoint Simulation
+
+A client server application throguh TCP that simulates the HTTP protocol. The
+client can login to an account that is hardcoded in the server and perform a
+series of HTTP requests to the server:
+
+- login <user> <password> - attempts to login and get acces to the files
+- GET <filename> - gets the <filename> file from the server (if any is found)
+and make a local copy of it
+- PUT <filename> <content> - saves a file with the name <filename> and content
+<content> on the server side
+- DELETE <filename> - deletes the <filename> file from the server side, if such
+file is found
+- quit - disconnect the user from the server
+
+The server acts similarly to a sharepoint, all users having access to all files
+but only some authorized users having access to modify the contents of the
+sharepoint.
+
